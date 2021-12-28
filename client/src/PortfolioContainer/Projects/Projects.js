@@ -6,13 +6,13 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import "./Testimonial.css";
+import "./Projects.css";
 import lady from "../../../src/img/Testimonial/lady.png";
 import mike from "../../../src/img/Testimonial/mike.png";
 import man from "../../../src/img/Testimonial/man.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png";
 
-export default function Testimonial(props) {
+export default function Projects(props) {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
@@ -46,26 +46,27 @@ export default function Testimonial(props) {
   return (
     <div>
       <ScreenHeading
-        title={"Testimonial"}
+        title={"Projects"}
         subHeading={"What My Client Say About Me"}
       />
-      <section className="testimonial-section fade-in" id={props.id || ""}>
+      <section className="Projects-section fade-in" id={props.id || ""}>
         <div className="container">
           <div className="row">
             <OwlCarousel
               className="owl-carousel"
-              id="testimonial-carousel"
+              id="Projects-carousel"
               {...options}
             >
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
+                  <h5>Google ELS</h5>
                     <p>
-                      <i className="fa fa-quote-left" />
+                     
                       I patronized Ehizeex and when He delivered, I honestly
                       fell in love with the project He is a very honest guy and
                       he delivers ontime.
-                      <i className="fa fa-quote-right" />
+                    
                     </p>
                     <ul className="stars list-unstyled">
                       <li>
@@ -128,6 +129,10 @@ export default function Testimonial(props) {
                   </div>
                 </div>
               </div>
+
+
+
+
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
@@ -163,6 +168,8 @@ export default function Testimonial(props) {
                   </div>
                 </div>
               </div>
+
+              
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">

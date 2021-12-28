@@ -16,7 +16,7 @@ router.post("/contact", (req, res) => {
     port: 465,
     auth: {
       user: "ernesarias13@gmail.com",
-      pass: "Tachi2503",
+      pass: "uwbvgzzpgmjkcloz",
     },
   });
   let mailOptions = {
@@ -39,7 +39,7 @@ router.post("/contact", (req, res) => {
     try {
       if (error)
         return res.status(400).json({ msg: "Please Fill All The Fields!" });
-      res.status(200).json({ msg: "Thank You For Contacting Ehizeex." });
+      res.status(200).json({ msg: "Thank You For Contacting Ernesto." });
     } catch (error) {
       if (error) return res.status(500).json({ msg: "There is server error" });
     }

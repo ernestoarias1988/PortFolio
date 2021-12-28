@@ -1,4 +1,4 @@
-.testimonial-section {
+.Projects-section {
   padding: 80px 0 80px;
   background-image: url("../../../src/assets/Testimonial/bg-1.jpg");
   background-position: center;
@@ -6,7 +6,7 @@
   position: relative;
   z-index: -1;
 }
-.testimonial-section::before {
+.Projects-section::before {
   content: "";
   position: absolute;
   left: 0;
@@ -31,46 +31,46 @@
   height: 130px;
 }
 
-.testimonial-section .testi-item {
+.Projects-section .testi-item {
   background-color: white;
   padding: 30px;
   border-radius: 50px 50px 50px 0px;
 }
 
-.testimonial-section .testi-item p {
+.Projects-section .testi-item p {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   margin: 0 0 10px;
   font-style: italic;
 }
-.testimonial-section .testi-item p .fa-quote-left {
+.Projects-section .testi-item p .fa-quote-left {
   margin-right: 5px;
   color: tomato;
 }
-.testimonial-section .testi-item p .fa-quote-right {
+.Projects-section .testi-item p .fa-quote-right {
   margin-left: 5px;
   color: tomato;
 }
 
-.testimonial-section .testi-comment .stars {
+.Projects-section .testi-comment .stars {
   margin: 0 0 20px;
 }
-.testimonial-section .testi-comment .stars li {
+.Projects-section .testi-comment .stars li {
   display: inline-block;
   margin: 0 1px;
 }
-.testimonial-section .testi-comment .stars li i {
+.Projects-section .testi-comment .stars li i {
   font-size: 13px;
   color: tomato;
 }
-.testimonial-section .client-info {
+.Projects-section .client-info {
   position: relative;
   padding-left: 80px;
   padding-top: 5px;
   min-height: 60px;
 }
-.testimonial-section .client-info img {
+.Projects-section .client-info img {
   height: 70px;
   width: 70px;
   border: 2px solid transparent;
@@ -80,13 +80,13 @@
   border-radius: 50%;
   position: absolute;
 }
-.testimonial-section .client-info h5 {
+.Projects-section .client-info h5 {
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
   margin: 0 0 2px;
 }
-.testimonial-section .client-info p {
+.Projects-section .client-info p {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
