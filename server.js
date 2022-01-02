@@ -2,6 +2,7 @@ require("dotenv").config
 const express = require("express")
 const cors = require("cors")
 const path = require("path")
+const publicPath = path.join(__dirname, '..', 'public');
 
 const contactRoute = require("./route/contactRoute")
 
@@ -14,10 +15,10 @@ app.use("/", contactRoute);
 
 if(process.env.NODE_ENV === "production")
 {
-    app.use(express.static("client/build"));
-    app.get("*",(req,res)=> (
-        res.sendFile(path.resolve(__dirname,"client","public","index.html"))
-    ))
+    app.use(express.static(publicPath));
+    app.get('*',(req,res)=> {
+        res.sendFile(path.join(publicPath,'index.html'))
+    })
 }
 
 const port = process.env.PORT || 5000
