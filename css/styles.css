@@ -11450,6 +11450,8 @@ html {
   }
 }
 .portfolio .portfolio-item {
+
+  border-style: solid;
   cursor: pointer;
   position: relative;
   display: block;
