@@ -2,7 +2,7 @@ require("dotenv").config
 const express = require("express")
 const cors = require("cors")
 const path = require("path")
-const publicPath = path.join(__dirname, '..', 'public');
+const publicPath = path.join(__dirname, '..','client', 'public');
 
 const contactRoute = require("./route/contactRoute")
 
