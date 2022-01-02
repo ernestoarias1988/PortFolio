@@ -3,6 +3,11 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const publicPath = path.join(__dirname, '..','PortFolio', 'public');
+const router = express.Router()
+
+router.get('/', (require, response) => {
+    response.sendFile(path.resolve(__dirname,'public','index.html'))
+   })
 
 
 app.use(express.static(publicPath));
